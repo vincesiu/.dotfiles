@@ -14,6 +14,10 @@
     added = green
     changed = yellow
     untracked = red
+[rerere]
+    enabled = true
+    autoupdate = true
+
 # Too knew to use
 #[color "diff"]
 #    old = red strike
@@ -30,3 +34,4 @@
 #############################
 [alias]
     st = status
+    oops = commit --amend -C HEAD
