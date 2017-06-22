@@ -19,5 +19,15 @@ alias ls='ls --color=auto -C --group-directories-first'
 alias la='ls --color=auto -alF --group-directories-first'
 alias ll='ls --color=auto -lF --group-directories-first'
 
+alias c1="awk '{ print \$1 }'"
+alias c2="awk '{ print \$2 }'"
+alias c3="awk '{ print \$3 }'"
+alias c4="awk '{ print \$4 }'"
+alias c5="awk '{ print \$5 }'"
+alias c6="awk '{ print \$6 }'"
+alias c7="awk '{ print \$7 }'"
+alias c8="awk '{ print \$8 }'"
+alias c9="awk '{ print \$9 }'"
+
 alias powerup='chmod u+x' #quick alias for making something runnable
 alias blacksheepwall='reset; stty sane; echo -e "\033c"' #alias for reseting terminal
