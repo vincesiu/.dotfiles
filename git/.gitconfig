@@ -1,6 +1,6 @@
 [user]
     email = vince.siu4@gmail.com
-	name = Vincent Siu
+    name = Vincent Siu
 [core]
     editor = vim
 [color]
@@ -18,7 +18,7 @@
     enabled = true
     autoupdate = true
 
-# Too knew to use
+# Too new to use
 #[color "diff"]
 #    old = red strike
 #    new = green italic
@@ -26,12 +26,20 @@
 
 #Important options
 #############################
-[push]
-    default = simple #Only push the current branch to remote
+[push] 
+    #Only push the current branch to remote
+    default = simple
 
 
 #Aliases
 #############################
 [alias]
     st = status
-    oops = commit --amend -C HEAD
+
+    # shows a simple history
+    sl = log --oneline --graph
+
+    # shows a more complex history.
+    # --decorate=full shows the full name of the reference, which is nice for different remotes
+    # --all shows every branch, not just the current one
+    ssl = log --decorate=full --oneline --graph --all
