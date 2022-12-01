@@ -15,6 +15,11 @@
     changed = yellow
     untracked = red
 [rerere]
+#   rerere is short for "reuse recorded resolution"
+#
+#   Enabling rerere means that if you resolve a merge conflict in a certain
+#   way, and then you see the exact same merge conflict again, then git will
+#   resolve it using the recorded conflict resolution
     enabled = true
     autoupdate = true
 
@@ -27,8 +32,17 @@
 #Important options
 #############################
 [push] 
-    #Only push the current branch to remote
+    # Only push the current branch to remote
     default = simple
+
+[commit]
+    # show full diff being committed in the editor when writing commit message
+    verbose = true
+
+[pull]
+    # Make git pull only succeed if merge is fast forward. This is like
+    # git-fetch but with an extra step
+    ff = only
 
 
 #Aliases
