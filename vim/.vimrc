@@ -36,9 +36,6 @@ set relativenumber
 inoremap <Down> <C-o>gj
 inoremap <Up> <C-o>gk
 
-" Adding c-W as my save since I am not quick enough to lift my finger off
-cnoremap W w
-
 " Sets textwidth to auto 72
 au FileType gitcommit set tw=72
 
@@ -61,7 +58,6 @@ nnoremap <C-l> <C-w>l
 set ignorecase "Case insensitive searching hooray!
 
 " cool things:
-" daw//delete word uncer cursor
 " ?<word>//search backwards
 " <count>G//go to specific line
 " ==//indnet current line
