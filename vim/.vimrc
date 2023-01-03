@@ -55,7 +55,16 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
-set ignorecase "Case insensitive searching hooray!
+
+" This sets the relative directory to be the directory you are searching from
+set autochdir
+
+" Search options
+" incsearch: As you type, the search changes
+set incsearch
+" hlsearch: highlights previous search
+set hlsearch
+" set ignorecase "Case insensitive searching hooray!
 
 " cool things:
 " ?<word>//search backwards
@@ -73,6 +82,17 @@ set ignorecase "Case insensitive searching hooray!
 "   set backup
 "   set backupdir=~/.vim/backup
 "   set directory=~/.vim/tmp
-"
-"
-"    
+
+" Command Aliases
+:command Noff set norelativenumber
+:command Non set relativenumber
+:command Poff set nopaste
+:command Pon set paste
+
+" My Laser Targetting
+set colorcolumn=81,89
+set cursorline
+" Shows the current cursor linenumber
+set number
+" Shows relative numbers
+set relativenumber
