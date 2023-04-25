@@ -1,0 +1,18 @@
+{
+    // basic editor settings
+    "editor.acceptSuggestionOnEnter": "off",
+
+    // vim settings
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.hlsearch": true,
+    "vim.leader": "<space>",
+    "vim.useSystemClipboard": true,
+    "vim.surround": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "k"],
+            "after": ["<Esc>"]
+        }
+    ],
+}
